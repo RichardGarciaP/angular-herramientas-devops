@@ -11,7 +11,12 @@
 
       <div class="card-body">
         <h5 class="card-title text-capitalize">{{ post.title }}</h5>
+        @if(post?.body){
         <p class="card-text">{{ post.body }}</p>
+        } @if(post?.description){
+        <p class="card-text">{{ post.description }}</p>
+
+        }
       </div>
       }
     </div>
